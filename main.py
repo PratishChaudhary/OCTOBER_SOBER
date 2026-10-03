@@ -23,7 +23,7 @@ app = FastAPI()
 # Mount current directory to serve static HTML files
 app.mount("/static", StaticFiles(directory="static"), name="static")
 # Load Whisper STT (small model runs fast on CPU/GPU)
-stt_model = WhisperModel("base", device="cpu", compute_type="int8")
+stt_model = WhisperModel("tiny", device="cpu", compute_type="int8")
 
 @app.get("/")
 async def index():
