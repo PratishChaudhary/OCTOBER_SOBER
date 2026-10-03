@@ -2,3 +2,9 @@ geminiapi.env
 user_input.mp3
 user_input.wav
 \hackfest
+.env
+.env.*
+!.env.example
+static/response.mp3
+__pycache__/
+\tests
